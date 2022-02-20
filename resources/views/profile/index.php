@@ -13,7 +13,7 @@
       }
     }
     ?>
-    <form action="/requestwork/public/profile/comfirm" mehod="post">
+    <form action="/requestwork/public/profile/confirm" mehod="post">
       <?php echo e(csrf_field()); ?>
       <table>
         <tr>

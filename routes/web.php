@@ -17,4 +17,4 @@ Route::get('/', function () {
 
 Route::get('/profile/index', 'ProfileController@index');
 Route::get('/profile/confirm', 'ProfileController@confirm');
-Route::post('/profile/confirm', 'ProfileController@confirm');
+Route::post('/profile/index', 'ProfileController@index');

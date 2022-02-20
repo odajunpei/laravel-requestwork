@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profile', 'ProfileController@index');
-Route::post('/profile', 'ProfileController@index');
-Route::get('/profile/comfirm', 'ProfileController@comfirm');
+Route::get('/profile/index', 'ProfileController@index');
+Route::get('/profile/confirm', 'ProfileController@confirm');
+Route::post('/profile/confirm', 'ProfileController@confirm');

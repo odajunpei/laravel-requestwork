@@ -12,13 +12,13 @@ class ProfileController extends Controller
         return view('index');
     }
 
-    public function comfirm(Request $request)
+    public function confirm(Request $request)
     {
         $username = $request->session()->get('username');
         $password = $request->session()->get('password');
         $latitude = $request->session()->get('latitude');
         $longitude = $request->session()->get('longitude');
 
-        return view('profile.comfirm', ['username' => $username]);
+        return view('profile.index', ['username' => $username], ['password' => $password], ['latitude' => $latitude], ['longitude' => $longitude]);
     }
 }

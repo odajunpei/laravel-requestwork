@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/profile', 'ProfileController@index');
+Route::post('/profile', 'ProfileController@index');
+Route::get('/profile/comfirm', 'ProfileController@comfirm');
